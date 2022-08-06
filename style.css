@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(257, 40%, 49%);
+    --secondary-color: hsl(300, 69%, 71%);
+
+    --text-heading: 'Poppins', sans-serif;
+    --text-body: 'Open Sans', sans-serif;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+
+    padding: 3.8rem;
+}
+
+header img {
+    max-width: 15rem;
+}
+
+.wrapper-img {
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-img img {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.text-container {
+    color: white;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-family: var(--text-heading);
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 3.8rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.text-container p {
+    font-family: var(--text-body);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+
+    margin-bottom: 2.8rem;
+}
+
+.text-container #btn-register {
+    padding: 1.5rem;
+    width: 25rem;
+
+    background-color: white;
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.411);
+
+    font-family: var(--text-heading);
+    color: var(--primary-color);
+
+    margin-bottom: 10rem;
+
+    cursor: pointer;
+}
+
+.text-container #btn-register:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+footer #btn-facebook,
+footer #btn-twitter,
+footer #btn-instagram {
+    width: 4.5rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    fill: white;
+
+    cursor: pointer;
+}
+
+footer #btn-facebook svg {
+    width: 1.3rem;
+}
+
+footer #btn-twitter svg,
+footer #btn-instagram svg {
+    width: 1.9rem;
+}
+
+footer #btn-facebook:hover,
+footer #btn-twitter:hover,
+footer #btn-instagram:hover {
+    border: 1px solid var(--secondary-color);
+
+    fill: var(--secondary-color);
+}
