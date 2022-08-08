@@ -34,7 +34,7 @@ header img {
 
 .wrapper-img img {
     width: 100%;
-    max-width: 50rem;
+    max-width: 45rem;
 }
 
 .text-container {
@@ -117,4 +117,81 @@ footer #btn-instagram:hover {
     border: 1px solid var(--secondary-color);
 
     fill: var(--secondary-color);
+}
+
+@media (min-width: 400px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+
+        padding: 4rem 8rem;
+    }
+
+    main {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    header img {
+        max-width: 18rem;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        gap: 3.5rem;
+
+        margin-top: 3.5rem;
+    }
+
+    .wrapper-img {
+        margin: 0;
+        width: 100rem;
+    }
+
+    .wrapper-img img {
+        min-width: 450px;
+        max-width: 100%;
+        height: fit-content;
+    }
+
+    .text-container {
+        max-width: 40rem;
+        padding-top: 5rem;
+
+        color: white;
+        text-align: left;
+    }
+
+    .text-container h1 {
+        font-size: 3rem;
+    }
+
+    .text-container #btn-register {
+        width: 18rem;
+        margin: 0;
+    }
+
+    footer {
+        justify-content: end;
+    }
+
+    footer #btn-facebook:hover,
+    footer #btn-twitter:hover,
+    footer #btn-instagram:hover {
+        animation: upItem 1s infinite;
+    }
+
+    @keyframes upItem {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
 }
